@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johan Alvarez Arica">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html5,css,javascript,desarrollo web">
+    <title>Regiones y Turismo en Perú</title>
+    <link rel="shortcut icon" href="../img/turismo.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f5;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #1c5985;
+        }
+        .lugar {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            margin-top: 20px;
+        }
+        .lugar img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explorando el Perú</h1>
+        <p>Descubre sus regiones, provincias y distritos, además de sus lugares turísticos</p>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#regiones">Regiones</a></li>
+                <li><a href="#turismo">Turismo</a></li>
+                <li><a href="https://www.peru.travel/" target="_blank">Sitio Oficial de Turismo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="historia">
+        <h2>Historia de Cusco</h2>
+        <p>Cusco fue la capital del Imperio Inca y es considerada la ciudad más antigua habitada de América del Sur. Su historia se remonta a más de 3,000 años y aún conserva una impresionante arquitectura inca y colonial.</p>
+    </section>
+    
+    <section id="regiones">
+        <h2>Regiones, Provincias y Distritos</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Imagen izquierda -->
+            <img src="/img/lima.1.PNG" alt="Región Lima" style="width: 150px; height: auto; border-radius: 10px;">
+    
+            <!-- Contenido centrado -->
+            <div style="flex: 1; padding: 0 20px; text-align: center;">
+                <ul style="text-align: left;">
+                    <li><strong><a href="https://es.wikipedia.org/wiki/Departamento_de_Lima" target="_blank">Región Lima</a></strong>
+                        <ul>
+                            <li><strong><a href="https://es.wikipedia.org/wiki/Provincia_de_Lima" target="_blank">Provincia de Lima</a></strong>
+                                <ul>
+                                    <li><a href="https://es.wikipedia.org/wiki/Miraflores_(Lima)" target="_blank">Miraflores</a></li>
+                                    <li><a href="https://es.wikipedia.org/wiki/San_Isidro_(Lima)" target="_blank">San Isidro</a></li>
+                                    <li><a href="https://es.wikipedia.org/wiki/Barranco_(Lima)" target="_blank">Barranco</a></li>
+                                </ul>
+                            </li>
+                            <li><strong><a href="https://es.wikipedia.org/wiki/Provincia_de_Huaral" target="_blank">Provincia de Huaral</a></strong>
+                                <ul>
+                                    <li><a href="https://es.wikipedia.org/wiki/Chancay" target="_blank">Chancay</a></li>
+                                    <li><a href="https://es.wikipedia.org/wiki/Aucallama" target="_blank">Aucallama</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong><a href="https://es.wikipedia.org/wiki/Departamento_del_Cusco" target="_blank">Región Cusco</a></strong>
+                        <ul>
+                            <li><strong><a href="https://es.wikipedia.org/wiki/Provincia_del_Cusco" target="_blank">Provincia de Cusco</a></strong>
+                                <ul>
+                                    <li><a href="https://es.wikipedia.org/wiki/San_Blas_(Cusco)" target="_blank">San Blas</a></li>
+                                    <li><a href="https://es.wikipedia.org/wiki/Wanchaq" target="_blank">Wanchaq</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Imagen derecha -->
+            <img src="/img/cusco.jpg" alt="Región Cusco" style="width: 150px; height: auto; border-radius: 10px;">
+        </div>
+         <!-- Enlace de descarga con estilo -->
+         <div style="margin-top: 20px;">
+            <a href="/pdf/GuiaTuristico.pdf" download 
+               style="display: inline-block; background-color: #2980b9; color: white; padding: 10px 15px; 
+                      text-decoration: none; border-radius: 5px; font-weight: bold;">
+                📄 Descargar Guía de Turismo
+            </a>  
+                <!-- Nuevo enlace mejorado -->
+              <li style="margin-top: 10px;">
+                   📍 <a href="practica1.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #2980b9; font-weight: bold; text-decoration: none;">
+                    Lugares Más Visitados del Perú
+                      </a>
+              </li>
+         </div>
+    </section>
+    
+    <section id="turismo">
+        <h2>Turismo en Cusco</h2>
+        <p>Cusco es un destino lleno de historia y cultura. Algunos de sus lugares turísticos más emblemáticos incluyen:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="/img/istockphoto-472224677-612x612.jpg" alt="Machu Picchu" style="width: 50px; height: 50px; border-radius: 5px; margin-right: 10px;">
+                <strong>Machu Picchu:</strong> Una de las siete maravillas del mundo, rodeada de paisajes impresionantes.
+            </li>
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="/img/sacsayhuaman.PNG" alt="Sacsayhuamán" style="width: 50px; height: 50px; border-radius: 5px; margin-right: 10px;">
+                <strong>Sacsayhuamán:</strong> Fortaleza inca con enormes muros de piedra ensamblados con precisión.
+            </li>
+            <li style="display: flex; align-items: center;">
+                <img src="/img/valle_sagrado.PNG" alt="Valle Sagrado" style="width: 50px; height: 50px; border-radius: 5px; margin-right: 10px;">
+                <strong>Valle Sagrado:</strong> Un lugar con impresionantes paisajes y ruinas incas.
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>© 2025 Explorando el Perú - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

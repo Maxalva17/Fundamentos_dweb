@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>M K Y</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="html5,css,javascript,desarrollo web">
+        <meta name="author" content="Johan Alvarez Arica">
+        <link rel="shortcut icon" href="../img/web-35.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/8b1bcf996b.js" crossorigin="anonymous"></script>
+        <!--Para los estilos-->
+        <link rel="stylesheet" href="/CSS/ejemplo.css">
+    </head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td{
+            border: 1px solid #ddd;
+        }
+        th, td{
+            padding: 10px;
+            text-align:left;
+        }
+        th{
+            background-color: #3498db;
+            color: white;
+        }
+        .actions{
+            text-align: center;
+        }
+        .icon{
+            font-size: 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .icon-edit{
+            color: #f1c40f;
+        }
+        .icon-delete{
+            color: #e74c3c;
+        }
+        .icon:hover{
+            color: #2c3e50;
+        }
+    </style>
+    <body>
+        <h2>Lista de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>$10.00</td>
+                    <td class="actions">
+                        <i class="fas fa-edit icon icon-edit" title="Modificar"></i>
+                        <i class="fas fa-trash icon icon-delete" title="Eliminar"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>$15.00</td>
+                    <td class="actions">
+                        <i class="fas fa-edit icon icon-edit" title="Modificar"></i>
+                        <i class="fas fa-trash icon icon-delete" title="Eliminar"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Producto 3</td>
+                    <td>$20.00</td>
+                    <td class="actions">
+                        <i class="fas fa-edit icon icon-edit" title="Modificar"></i>
+                        <i class="fas fa-trash icon icon-delete" title="Eliminar"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

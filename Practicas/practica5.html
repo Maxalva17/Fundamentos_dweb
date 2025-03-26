@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario de Registro</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="html5,css,javascript,desarrollo web">
+        <meta name="author" content="Johan Alvarez Arica">
+        <link rel="shortcut icon" href="../img/web-35.png" type="image/x-icon">
+        <!--Para los estilos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/ejemplo.css">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+            .container {
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                text-align: left;
+                width: 350px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            button {
+                padding: 10px 20%;
+                background: blue;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button:hover {
+                background: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Formulario de Registro</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" value="Juan Pérez" readonly>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" value="ejemplo@dominio.com" readonly>
+    
+                <label for="telefono">Número de teléfono:</label>
+                <input type="text" id="telefono" name="telefono" value="232342">
+    
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                <br>
+                <label>Género:</label>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" checked>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="genero" value="otro">
+                <br>
+                <label>Aficiones:</label>
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" id="deporte" name="aficiones" value="deporte" checked>
+                <label for="musica">Música</label>
+                <input type="checkbox" id="musica" name="aficiones" value="musica">
+                <label for="lectura">Lectura</label>
+                <input type="checkbox" id="lectura" name="aficiones" value="lectura">
+                <br>
+                <label for="pais">País de residencia:</label>
+                <select id="pais" name="pais">
+                    <option value="espana" selected>España</option>
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                </select>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                <br>
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto los <a href="#">términos y condiciones</a>.</label>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

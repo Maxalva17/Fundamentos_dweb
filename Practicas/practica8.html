@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Practica 8</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="html5,css,javascript,desarrollo web">
+        <meta name="author" content="Johan Alvarez Arica">
+        <link rel="shortcut icon" href="../img/web-35.png" type="image/x-icon">
+        <!--Para los estilos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/ejemplo.css">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #0d0d0d;
+                color: #fff;
+                text-align: center;
+            }
+            header {
+                background: linear-gradient(90deg, #222, #444);
+                padding: 40px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            h1 span {
+                color: #ffcc00;
+            }
+            .hero {
+                width: 100%;
+                max-height: 400px;
+                overflow: hidden;
+            }
+            .hero img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .about {
+                background: #222;
+                padding: 40px;
+                border-radius: 10px;
+                margin: 30px auto;
+                width: 80%;
+                box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            }
+            .about h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+                color: #ffcc00;
+            }
+            .about p {
+                font-size: 18px;
+                line-height: 1.6;
+                text-align: justify;
+            }
+            .about span {
+                font-weight: bold;
+                color: #ff9900;
+            }
+            .collage {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin: 20px 0;
+            }
+            .collage img {
+                width: 250px;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            }
+            video, audio {
+                width: 80%;
+                margin: 20px 0;
+                border-radius: 10px;
+            }
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                background: #222;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            th, td {
+                padding: 12px;
+                border: 1px solid #444;
+                text-align: center;
+            }
+            th {
+                background: #ffcc00;
+                color: #222;
+            }
+            td {
+                background: #333;
+            }
+            form {
+                background: #222;
+                padding: 30px;
+                border-radius: 10px;
+                width: 40%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            }
+            input, textarea {
+                margin: 10px 0;
+                padding: 12px;
+                border-radius: 5px;
+                border: none;
+                font-size: 16px;
+                background: #333;
+                color: white;
+            }
+            button {
+                background: linear-gradient(90deg, #ffcc00, #ff9900);
+                color: #222;
+                cursor: pointer;
+                font-size: 18px;
+                padding: 12px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            button:hover {
+                background: #ff9900;
+            }
+            footer {
+                background: #111;
+                padding: 15px;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenidos a la Fanpage de <span>Roosevelt</span></h1>
+        </header>
+
+        <section class="img">
+            <img src="/img/roosevelt foto1.PNG" alt="Roosevelt en el escenario">
+        </section>
+    
+        <section>
+            <h2>Sobre Roosevelt</h2>
+            <p>Roosevelt (<span>Marius Lauber</span>, 1990) es un <span>cantante, productor y DJ</span> alemán que mezcla <span>synth-pop, disco y electrónica</span>. Tras iniciar en <span>Beat!Beat!Beat!</span>, lanzó álbumes aclamados como <span>"Roosevelt"</span>, <span>"Young Romance"</span> y <span>"Polydans"</span>. Su estilo sofisticado lo ha llevado a colaborar con grandes artistas y actuar en escenarios de renombre.</p>
+        </section>      
+        <section>
+            <h3>Álbumes más vendidos</h3>
+            <table>
+                <tr>
+                    <th>Álbum</th>
+                    <th>Año</th>
+                    <th>Plataforma más vendida</th>
+                    <th>Copias Vendidas</th>
+                </tr>
+                <tr>
+                    <td>Roosevelt</td>
+                    <td>2016</td>
+                    <td>Spotify</td>
+                    <td>500,000+</td>
+                </tr>
+                <tr>
+                    <td>Young Romance</td>
+                    <td>2018</td>
+                    <td>Apple Music</td>
+                    <td>700,000+</td>
+                </tr>
+                <tr>
+                    <td>Polydans</td>
+                    <td>2021</td>
+                    <td>Amazon Music</td>
+                    <td>600,000+</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Galería de Imágenes</h3>
+            <div class="collage">
+                <img src="/img/roosevelt foto2.PNG" alt="Roosevelt en concierto">
+                <img src="/img/roosevelt foto3.PNG" alt="Roosevelt en estudio">
+                <img src="/img/roosevelt foto5.PNG" alt="Álbum de Roosevelt">
+            </div>
+        </section>
+    
+        <section>
+            <h4>Videos</h4>
+            <video controls>
+                <source src="/11_Videos/Roosevelt - Shadows (Official Video) - Roosevelt (1080p, h264).mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+    
+        <section>
+            <h5>Música</h5>
+            <audio controls>
+                <source src="/12_Audio/Roosevelt - In The Dark (Official Audio) - Roosevelt.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+    
+        <section>
+            <h6>Contacto</h6>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Fanpage de Roosevelt - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
