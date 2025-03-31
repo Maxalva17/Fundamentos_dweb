@@ -1,0 +1,41 @@
+/*Selector universalr*/
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*seletor de elemento*/
+h1{
+    text-align: center;
+}
+h1,h2,h3{
+    color: red;
+}
+p{
+    text-align: justify;
+    color: green;
+}
+
+/*selectro de clase*/
+.destacado1, .destacado2{
+    background-color: aquamarine;
+    color: blue;
+}
+.text2{
+    text-align: center;
+}
+
+/*Selector ID*/
+#selectorid{
+    color: blueviolet;
+}
+
+/*Selector de atributo*/
+a[target]{
+    border: 3px solid blue;
+}
+
+/*Selector de Pseudo-clase*/
+a:hover{
+    font-size: 20px;
+    color: green;
+}
