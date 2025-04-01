@@ -1,0 +1,27 @@
+/* Estilos generales */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f0f0f0; 
+    } 
+    .container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    margin: 20px auto; 
+    } 
+    .image-wrapper { 
+    width: 300px; /* Ancho de cada imagen */
+    height: 300px; /* Alto de cada imagen */
+    margin: 10px; 
+    text-align: center; 
+    } 
+    .image-wrapper img{
+        max-width: 100%; 
+        max-height: 100%; 
+        border: 2px solid #333; /* Borde de 2px sólido de color gris oscuro */
+        border-radius: 20px; /* Borde redondeado */
+        display: block; /* Elimina el espacio extra por defecto debajo de la imagen*/
+    } 
