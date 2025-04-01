@@ -1,0 +1,87 @@
+h1,h2{
+    text-align: center;
+    color: #333;
+}
+
+p,strong{
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;/*Asegura que el padding no afecte el ancho*/
+}
+/*Borders*/
+.border-none{
+    border: none;
+}
+
+.border-hidden{
+    border: hidden;
+}
+
+.border-dotted{
+    border: 5px dotted #007bef;
+}
+
+.border-dashed{
+    border: 5px dashed blueviolet;
+}
+
+.border-solid{
+    border: 5px solid seagreen;
+}
+
+.border-double{
+    border: 5px double yellowgreen;
+}
+
+.border-groove{
+    border: 5px groove hotpink;
+}
+
+.border-ridge{
+    border: 5px ridge chocolate;
+}
+.border-inset{
+    border: 5px inset firebrick;
+}
+.border-outset{
+    border: 5px outset powderblue;
+}
+
+/*Bordes compuestos*/
+.border-top{
+    border-top: 5px solid teal;
+}
+.border-right{
+    border-right: 5px dashed khaki;
+}
+.border-bottom{
+    border-bottom: 5px dotted forestgreen;
+}
+.border-left{
+    border-left: 5px double darkseagreen;
+    margin-bottom: 40px;
+}
+.border-all{
+    border-top: 5px solid teal;
+    border-right: 5px dashed khaki;
+    border-bottom: 5px dotted forestgreen;
+    border-left: 5px double darkseagreen;
+    width: 70%;
+    border-radius: 20px;
+    color: blue;
+    line-height: 1.5;
+}
+.border-all:hover{
+    background-color: gold;
+    color: black;
+    width: 100%;
+    border-top: 5px solid rgb(9, 82, 82);
+    border-right: 5px dashed rgb(101, 94, 22);
+    border-bottom: 5px dotted rgb(3, 73, 3);
+    border-left: 5px double rgb(25, 56, 119);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}

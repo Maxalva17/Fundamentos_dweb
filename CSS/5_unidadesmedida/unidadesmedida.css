@@ -1,0 +1,52 @@
+/*Reset para margenes y rellenos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*estilos para body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;/*Hace que el body ocupe al menos la altura de la ventana*/
+}
+/*header con unidades em y rem*/
+header{
+    background-color: #4caf50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5em;/*el tamaño de la fuente se adacta al tamaño del contenedor*/
+}
+/*Section comunidades de porcentaje (%) y vh (altura de la ventana)*/
+section{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    height:  50vh;/*50% de la altura de la ventana*/
+}
+/*Articulo con unidades em*/
+article{
+    background-color: #fff;
+    width: 40%;
+    padding: 1em;/*Basado en el tamaño de la fuente*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+/*Imagen con unidades vh(altura de la ventana) y vw ancho de la ventana*/
+img{
+    width: 35vh;
+    height: auto;
+    border-radius: 10px;
+}
+/*footer con unidades rem*/
+footer{
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    /*basado en el tamaño de la fuente raiz*/
+    margin-top: auto;
+}

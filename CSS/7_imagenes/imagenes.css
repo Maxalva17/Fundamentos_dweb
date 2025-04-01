@@ -1,0 +1,43 @@
+/*Tmaños y dimenciones*/
+img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+/*posicionammiento*/
+/*img{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}*/
+
+/*alinacion*/
+.container{
+    text-align: center;
+}
+img{
+    vertical-align: middle;
+}
+
+/*borders*/
+img{
+    border: 2px solid #ccc;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*otras propiedades*/
+img{
+    display: block;
+    overflow: scroll;
+    
+}
+body{
+    width: 100vh;
+    height: 100vh;
+}

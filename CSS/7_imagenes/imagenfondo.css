@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;/*color alternativo*/
+    background: url('https://wallpapers.com/images/hd/wallpaper-bliss-landscape-windows-xp-stock-4k-nature-nhvtxpop808oaye4.webp');
+    background-size: cover;/*ajuta la imagen para cubrir eltamaño de fondo*/
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*para centar en la pagina el contenido*/
+}
+.container{
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container p{
+    font-size: 1.2em;
+}
