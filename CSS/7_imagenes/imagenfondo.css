@@ -3,22 +3,89 @@ body{
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;/*color alternativo*/
-    background: url('https://wallpapers.com/images/hd/wallpaper-bliss-landscape-windows-xp-stock-4k-nature-nhvtxpop808oaye4.webp');
-    background-size: cover;/*ajuta la imagen para cubrir eltamaño de fondo*/
-    background-repeat: no-repeat;
+    background-size: cover;
+    /*ajusta la imagen para cubrir el tamaño de fondo*/
+    background-image: url('https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/b/r/brasil35.jpg?crop=0%2C231%2C4000%2C2200&wid=4000&hei=2200&scl=1.0');
+    
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
+    /*para centrar en la pagina el contenido*/
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*para centar en la pagina el contenido*/
+    /*transicion de la imagen*/
+    transition: background-image 5s ease-in-out; /* Transición suave al cambiar la imagen */
 }
+
+/* Cambiar la imagen de fondo después de cierto tiempo */
+@keyframes cambioFondo {
+    5%{
+        background-image: url('https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/b/r/brasil35.jpg?crop=0%2C231%2C4000%2C2200&wid=4000&hei=2200&scl=1.0');
+    
+    }
+    25% {
+        background-image: url('https://gaceta.cch.unam.mx/sites/default/files/styles/imagen_articulos_1920x1080/public/2023-09/pag_62.jpg?h=208bb47f&itok=Nj1QrlLd');
+    }
+    50% {
+        background-image: url('https://images.adsttc.com/media/images/52b9/8ca8/e8e4/4e83/af00/00d0/large_jpg/brochure_postgrado.jpg?1387891871');
+    }
+    75% {
+        background-image: url('https://www.granjaporcon.org.pe/img/pueblo.jpg');
+    }
+}
+
+/* Aplicar la animación */
+body {
+    animation: cambioFondo 50s infinite; /* La animación dura 10 segundos y se repite infinitamente */
+}
+
+
+/*para el texto centrado*/
 .container{
     background-color: rgba(255,255,255,0.8);
     padding: 20px;
     border-radius: 10px;
+    margin: 10px;
+    animation: cambioEstilo 50s infinite;
+    opacity: 0.7;
+
 }
 .container p{
     font-size: 1.2em;
+    color: black;
+}
+
+/* Animación para cambiar el fondo, el borde y la opacidad */
+@keyframes cambioEstilo {
+    0% {
+        background-color: #ffffff;
+        border-color: #3498db;
+        color: #333;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        background-color: #f39c12;
+        border-color: #e67e22;
+        color: #ffffff;
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    50% {
+        background-color: #2ecc71;
+        border-color: #27ae60;
+        color: #ffffff;
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+    75% {
+        background-color: #9b59b6;
+        border-color: #8e44ad;
+        color: #ffffff;
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    
 }

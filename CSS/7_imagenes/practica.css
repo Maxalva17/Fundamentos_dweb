@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /*Color alternativo*/
+    background-image: url('https://appmaster.io/api/_files/hRaLG2N4DVjRZJQzCpN2zJ/download/');
+    background-size: cover;
+    /*Ajusta la imagen para cubrir el tamaño de fondo*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    /*Para centrar la pagina con el contenido*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
+}
+.container{
+    background-color: rgba(182, 82, 82, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 5px ridge  rgb(116, 161, 213);
+
+}
+.container p{
+    font-size: 1.2em;
+}
+h1{
+    text-align: center;
+}
+
+.container2{
+    background-color: rgba(109, 106, 106, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 5px dashed darkblue;
+    
+}
+.container2 p{
+    font-size: 1.2em;
+}
+h2{
+    text-align: center;
+}
