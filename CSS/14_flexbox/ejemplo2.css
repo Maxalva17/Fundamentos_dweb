@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    justify-content: flex-start;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    /*flex-direction: column-reverse;*/
+}
+
+.item{
+    background-color: blue;
+    padding: 10px;
+}

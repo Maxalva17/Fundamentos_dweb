@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Boceto</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="html5,css,javascript,desarrollo web">
+        <meta name="author" content="Johan Alvarez Arica">
+        <link rel="shortcut icon" href="../img/web-35.png" type="image/x-icon">
+        <!--Para los estilos-->
+        <link rel="stylesheet" href="./boceto.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    </head>
+    <body>
+      <!-- Header con navegación fija -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#inicio">Clínica Dental</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./boceto.html">Inicio</a></li>
+          <li><a href="./boceto2.html">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Tu Sonrisa, Nuestra Pasión</h1>
+      <p>Expertos en salud dental y estética para toda la familia</p>
+      <a href="#contacto" class="btn">Agenda tu Cita</a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="nosotros" class="section">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>Contamos con años de experiencia ofreciendo tratamientos dentales de alta calidad con un enfoque en la comodidad y el bienestar de nuestros pacientes.</p>
+    </div>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="section bg-light">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="#" alt="Ortodoncia">
+          <h3>Ortodoncia</h3>
+          <p>Corrección de la alineación dental con tratamientos modernos.</p>
+        </div>
+        <div class="service-card">
+          <img src="icon-implantes.png" alt="Implantes">
+          <h3>Implantes</h3>
+          <p>Soluciones seguras para la reposición de dientes.</p>
+        </div>
+        <div class="service-card">
+          <img src="icon-blanqueamiento.png" alt="Blanqueamiento">
+          <h3>Blanqueamiento</h3>
+          <p>Recupera el brillo natural de tu sonrisa de forma efectiva.</p>
+        </div>
+        <div class="service-card">
+          <img src="icon-rehabilitacion.png" alt="Rehabilitación">
+          <h3>Rehabilitación Oral</h3>
+          <p>Tratamientos integrales para mejorar la función y estética.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <!-- Utilizando Formspree para enviar el formulario (reemplaza YOUR_FORM_ID) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Clínica Dental. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

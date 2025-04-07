@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hmtl5,css,javascript,desarrollo web">
+        <meta name="author" content="Alexander Sánchez Liau">
+        <link rel="shortcut icon" href="../img/aro.jfif" type="image/x-icon">
+        <!--Para los estilos css-->
+        <link rel="stylesheet" href="./formulario.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="formulario" method="post">
+                <h2>Registro de Cliente</h2>
+                <div class="input-group">
+                    <label for="dni">
+                        <i class="fa-solid fa-address-card"></i> Dni
+                    </label>
+                    <input type="number" name="dni" id="dni" placeholder="Dni" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="nombre">
+                        <i class="fas fa-hashtag"></i> Nombre
+                    </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Apellidos">
+                        <i class="fas fa-hashtag"></i> Apellidos
+                    </label>
+                    <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos" step="0.01" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Telefono">
+                        <i class="fa-solid fa-phone"></i> Telefono
+                    </label>
+                    <input type="number" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="correo">
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </label>
+                    <input type="text" name="Correo" id="Correo" placeholder="ejemplo@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="fecha">
+                        <i class="fas fa-calendar-alt"></i> Fecha
+                    </label>
+                    <input type="date" name="fecha" id="fecha" placeholder="Fecha" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Cargo">
+                        <i class="fa-solid fa-envelopes-bulk"></i> Cargo
+                    </label>
+                    <select name="marca" id="marca" required>
+                        <option value="">Selecciona el Cargo</option>
+                        <option value="Marca1">Gerente</option>
+                        <option value="Marca2">Sub-gerente</option>
+                        <option value="Marca3">Empleado</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="sexo">
+                        <i class="fas fa-tag"></i> Sexo
+                    </label>
+                    <select name="marca" id="#" required>
+                        <option value="">Selecciona el Sexo</option>
+                        <option value="Marca1">Masculino</option>
+                        <option value="Marca2">Femenino</option>
+                    </select>
+                </div>
+
+                <a href="/CSS/11_tablas/tabla2.html" class="agregar-btn">Agregar Cliente</a>
+
+            </form>
+        </div>
+        <script src="https://kit.fontawesome.com/8b1bcf996b.js" crossorigin="anonymous"></script>
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

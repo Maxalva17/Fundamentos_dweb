@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #807f7f;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilos para iconos de acción */
+i {
+    color: #007bff;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+i:hover {
+    color: red;
+}
+
+
+
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th, td {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #444;
+    }
+}
+
+.container h1 {
+    font-size: 1.5em;
+}

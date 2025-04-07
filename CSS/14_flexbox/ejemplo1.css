@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: blueviolet;
+    padding: 10px;
+    grid-gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.container2{
+    display: flex;
+
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: blueviolet;
+    padding: 10px;
+    grid-gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.item2{
+    background-color: lightblue;
+    padding: 20px;
+}

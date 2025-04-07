@@ -1,0 +1,34 @@
+/* Estilos para el contenedor */
+.caja {
+    color: #333; /* Color de texto más suave */
+    background-color: #f1f1f1; /* Fondo gris claro */
+    width: 400px;
+    height: 300px;
+    border: 4px solid #b4b3b3; /* Borde suave y gris */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el padding */
+.caja .padding {
+    background-color: #bdbdbd; /* Fondo gris muy suave */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenido dentro del padding */
+.caja .padding .container {
+    background-color: #a6b8ca; /* Gris claro y suave */
+    padding: 10px;
+    border: 2px dashed black; /* Borde sutil */
+}
+
+/* Estilos para el margen */
+.caja .margen {
+    background-color: #d4d6dc; /* Fondo blanco roto */
+    margin: 20px;
+}

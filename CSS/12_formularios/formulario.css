@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #4CAF50;
+    --hover-color: #0056b3;
+    --hover-secondary: #45a049;
+    --bg-color: #f4f7fc;
+    --text-color: #333;
+    --border-radius: 8px;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de formulario */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Estilos del formulario */
+.formulario {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+h1, h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+/* Botón agregar */
+.agregar-btn {
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.agregar-btn:hover {
+    background-color: var(--hover-secondary);
+}
+
+/* Campos */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 15px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--primary-color);
+}
+
+/* Botón enviar */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--hover-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario {
+        padding: 20px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .agregar-btn {
+        width: 100%;
+    }
+}

@@ -1,46 +1,50 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /*Color alternativo*/
+    background-color: #f0f0f0;
     background-image: url('https://appmaster.io/api/_files/hRaLG2N4DVjRZJQzCpN2zJ/download/');
     background-size: cover;
-    /*Ajusta la imagen para cubrir el tamaño de fondo*/
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    /*Para centrar la pagina con el contenido*/
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: flex-start;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    text-align: center;       /* Centrado de texto */
+    flex-direction: column;   /* Para apilar verticalmente los contenedores */
 }
-.container{
-    background-color: rgba(182, 82, 82, 0.8);
-    padding: 20px;
+
+.container, .container2 {
+    background-color: rgba(159, 99, 31, 0.8); /* .container2 lo sobreescribe después */
+    padding: 20px 40px;
     border-radius: 10px;
     margin: 10px;
-    border: 5px ridge  rgb(116, 161, 213);
-
-}
-.container p{
-    font-size: 1.2em;
-}
-h1{
-    text-align: center;
+    border: 5px ridge rgb(67, 100, 137); /* .container2 lo sobreescribe después */
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave */
 }
 
-.container2{
+/* Efecto al pasar el ratón */
+.container:hover, .container2:hover {
+    transform: scale(1.05); /* agranda un poco el cuadro */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* sombra elegante */
+}
+
+/* Personalización individual (colores ya los tienes, pero por si acaso) */
+.container2 {
     background-color: rgba(109, 106, 106, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
     border: 5px dashed darkblue;
-    
 }
-.container2 p{
+
+.container p,
+.container2 p {
     font-size: 1.2em;
+    color: white;
+    margin: 0;
 }
-h2{
+
+h1, h2 {
     text-align: center;
+    color: white;
 }
