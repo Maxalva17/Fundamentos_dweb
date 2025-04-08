@@ -1,70 +1,104 @@
-h1{
+/* Fuente base moderna */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
     color: #2c3e50;
-    font-size: 36px;
+}
+
+/* Encabezados */
+h1 {
+    color: #2c3e50;
+    font-size: 40px;
     text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-h2{
+
+h2 {
     color: #34495e;
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
-h3{
-    color: #16a085;
-    font-size: 24px;
+
+h3 {
+    color: #1abc9c;
+    font-size: 26px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
-p{
-    font-size: 16px;
+
+/* Párrafos */
+p {
+    font-size: 17px;
     color: #7f8c8d;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin: 0 15px 15px;
 }
 
-/*Selector de clase*/
-.titulo-enlace{
-    color: #2ecc71;
-    font-size: 1.5em;
+/* Selector de clase */
+.titulo-enlace {
+    color: #27ae60;
+    font-size: 1.6em;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
-.parrafo-enlace{
+
+.parrafo-enlace {
     font-weight: bold;
+    color: #555;
 }
 
-/*Selectores de ID*/
-#enlace-principal{
+/* Selectores de ID */
+#enlace-principal {
     color: #2980b9;
     text-decoration: none;
     font-size: 1.2em;
+    transition: all 0.3s ease;
 }
 
-#seccion1{
+#seccion1 {
     background-color: #ecf0f1;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    margin: 30px 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-#seccion2{
-    background-color: #f7c2c2;
-    padding: 10px;
-    margin-top: 20px;
+#seccion2 {
+    background-color: #fceaea;
+    padding: 20px;
+    margin: 30px 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/*S.Atributo*/
-a[href="seccion1"]{
+/* Selectores de atributo */
+a[href="seccion1"] {
     color: #e67e22;
     font-style: italic;
+    transition: color 0.3s ease;
 }
 
-a[href="seccion2"]{
+a[href="seccion2"] {
     color: #9b59b6;
     text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
-/*S.Hover*/
-a:hover{
+/* Selectores hover */
+a:hover {
     color: #e74c3c;
     font-weight: bold;
 }
-h1 a:hover, h2 a:hover, h3 a:hover{
+
+h1 a:hover, h2 a:hover, h3 a:hover {
     color: #f39c12;
-    font-size: 1.3em;
+    transform: scale(1.05);
 }
-h3 a:hover{
+
+h3 a:hover {
     color: darkorchid;
 }

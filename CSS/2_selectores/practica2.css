@@ -1,70 +1,91 @@
-/*Selectores de elemento*/
-h1{
-    color: #3498db;
-    text-align: center;
-    font-size: 40px;
-}
-p{
-    font-size: 18px;
-    color: #2c3e50;
-    line-height: 1.8;
+/* Fuente base moderna */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
 }
 
-/*Selectores de clase*/
-.destacado{
+/* Selectores de elemento */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0 15px 15px;
+}
+
+/* Selectores de clase */
+.destacado {
     color: #e74c3c;
+    font-weight: 700;
+}
+
+.enlace-btn {
+    color: #ffffff;
+    background-color: #2ecc71;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enlace-btn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Selectores de ID */
+#main-header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+    background-color: #dfe6e9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #636e72;
+}
+
+/* Selectores de atributo */
+a[href="tutorial"] {
+    color: #f1c40f;
     font-weight: bold;
 }
 
-.enlace-btn{
-    color: #ffffff;
-    background-color: #27ae60;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/*Selectores de ID*/
-#main-header{
-    background-color: #34495e;
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-#footer{
-    background-color: #ecf0f1;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-/*Selectores de atributo*/
-a[href="tutorial"]{
-    color: #f39c12;
-}
-
-a[href$=".pdf"]{
+a[href$=".pdf"] {
     font-style: italic;
-    color: #9b59b6;
+    color: #8e44ad;
 }
 
-/*Selecores de hover*/
-
-a:hover{
-    color: #e74c3c;
+/* Selectores de hover */
+a:hover {
+    color: #c0392b;
     text-decoration: underline;
 }
-.enlace-btn:hover{
-    background-color: #16a085;
-}
 
-/*Selectores de descendientes*/
+/* Selectores de descendientes */
 #main-header p {
     font-size: 16px;
     color: #ecf0f1;
 }
-/*Selectores de hijo*/
+
+/* Selectores de hijo */
 #footer > p {
     color: #7f8c8d;
 }

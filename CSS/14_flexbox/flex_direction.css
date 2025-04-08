@@ -1,0 +1,65 @@
+h2{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px 0;
+    height: 300px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    /*Propiedades*/
+    align-items: center;/*centrado*/
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+    background-color: #4caf50;
+}
+
+/*Contenedor con flex-direction diferentes*/
+.row{
+    flex-direction: row;
+    /*propiedades: izquierda, centro, derecha*/
+    justify-content: left;
+    /*propiedades Flex-end, flex-strat*/
+    align-items: center;  
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: baseline;
+}
+
+.colum{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: brown;
+}
+.colum:hover{
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+
+.colum-reverse{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
