@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+/* 1. ROTATE */
+.imagen1 img:hover {
+    transform: rotate(10deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 2. SCALE */
+.imagen2 img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 3. TRANSLATE */
+.imagen3 img:hover {
+    transform: translate(15px, -10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 4. SKEW */
+.imagen4 img:hover {
+    transform: skew(10deg, 5deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
