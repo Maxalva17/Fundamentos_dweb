@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef1f6;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            display: flex;
+            height: 90vh;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,74,153,0.7), rgba(0,74,153,0.7)), url('dental-clinic.jpg') no-repeat center/cover;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+        }
+        .hero button {
+            background: #ffcc00;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background: #e6b800;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 280px;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #004a99;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #004a99;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div>
+            <h1>Tu Sonrisa, Nuestra Prioridad</h1>
+            <p>Confía en nuestros expertos en salud dental.</p>
+            <button>Agenda tu Cita</button>
+        </div>
+    </section>
+    
+    <section id="nosotros" class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una clínica con años de experiencia ofreciendo tratamientos dentales de alta calidad.</p>
+    </section>
+    
+    <section id="servicios" class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="icon-ortodoncia.png" alt="Ortodoncia">
+                <h3>Ortodoncia</h3>
+            </div>
+            <div class="service-card">
+                <img src="icon-implantes.png" alt="Implantes">
+                <h3>Implantes</h3>
+            </div>
+            <div class="service-card">
+                <img src="icon-blanqueamiento.png" alt="Blanqueamiento">
+                <h3>Blanqueamiento</h3>
+            </div>
+            <div class="service-card">
+                <img src="icon-rehabilitacion.png" alt="Rehabilitación Oral">
+                <h3>Rehabilitación Oral</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>
