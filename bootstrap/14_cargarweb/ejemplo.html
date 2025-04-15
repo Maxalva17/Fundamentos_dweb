@@ -14,40 +14,99 @@
 </head>
 
 <body>
-    <div class="text-center">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+    <div class="text-center" style="font-size: 3rem; animation: spin 2s linear infinite;">
+        😵‍💫
+    </div>
+
+    <style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <p></p>
+    <form>
+    <style>
+        .spinner-container {
+            position: relative;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .spinner-border {
+            width: 100%;
+            height: 100%;
+            border-width: 0.25rem;
+        }
+
+        .spinner-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    </style>
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="spinner-container">
+                <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" alt="Logo"
+                    class="spinner-logo">
+            </div>
         </div>
-    </div>
-    <p></p>
-    <p></p>
-    <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-secondary" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-success" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-danger" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-info" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-dark" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-</body>
+    </form>
+
+        <p></p>
+
+        <div class="kick-loader-container">
+            <div class="kick-loader"></div>
+        </div>
+
+        <style>
+            .kick-loader-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                /* pantalla completa */
+                background-color: #000;
+                /* fondo oscuro como Kick */
+            }
+
+            .kick-loader {
+                border: 6px solid #1DB954;
+                /* color verde tipo Kick */
+                border-top: 6px solid transparent;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                animation: spin 1s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>

@@ -1,0 +1,21 @@
+.header-container {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 20px;
+    color: white;
+}
+
+.table th {
+    background-color: #0072ff;
+    color: white;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+    .modal-body {
+        padding: 1rem;
+    }
+}

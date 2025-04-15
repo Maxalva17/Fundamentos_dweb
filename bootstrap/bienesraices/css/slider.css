@@ -1,0 +1,31 @@
+.carousel-item img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 40vh;
+    }
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: white;
+}
